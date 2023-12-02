@@ -43,13 +43,12 @@ def get_data():
     #creates parameters
     params = {
         'appid': API_KEY,
-        # 'lat': lat,
-        # 'lon': long,
-        'zip': 90089,
+        'lat': lat,
+        'lon': long,
         'units': 'imperial',
     }
 
-    response = requests.get(API_SITE)
+    response = requests.get(API_SITE, params)
 
     #extracts temperature and humidity if successful
     if response.status_code == 200:
