@@ -21,7 +21,7 @@ topic = "ryuyb/final"
 
 # API website and key
 API_SITE = "http://api.openweathermap.org/data/2.5/weather"
-API_KEY = '4cc919c4981eb59f9f4ffd541c6a1626'
+API_KEY = '9d4480a67d9c19595ced5db9ab7e9ac7'
 
 
 # connection callback
