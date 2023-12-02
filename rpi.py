@@ -43,8 +43,9 @@ def get_data():
     #creates parameters
     params = {
         'appid': API_KEY,
-        'lat': lat,
-        'lon': long,
+        # 'lat': lat,
+        # 'lon': long,
+        'zip': 90089,
         'units': 'imperial',
     }
 
