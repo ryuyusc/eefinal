@@ -84,7 +84,7 @@ if __name__ == '__main__':
     while True:
         if (grovepi.digitalRead(BT_PORT) == 1):
             #grabs data from the temperature and humidity sensor
-            [temperature, humidity] = grovepi.dht(TEMP_PORT, 0)
+            [temperature, humidity] = grovepi.digitalRead(TEMP_PORT, 0)
 
             # grabs data from the openweather API
             api_temp, api_hum = get_data()
