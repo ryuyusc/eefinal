@@ -4,7 +4,7 @@ from datetime import datetime
 import time
 
 #encryption key
-key = b'abcdefghi'
+key = b'VgEBRr6rb8VCTYjGBa4vZ1AOT-ubFmPp4NlSszLFoT'
 cipher = Fernet(key)
 
 # creates broker address and topic

@@ -1,6 +1,6 @@
 import paho.mqtt.client as mqtt
 from cryptography.fernet import Fernet
-import grovepi
+from grovepi import grovepi
 import geocoder
 import requests
 import time
@@ -12,7 +12,7 @@ BT_PORT = 3
 TEMP_PORT = 2
 
 # this is for encryption purposes
-key = b'abcdefghi'
+key = b'VgEBRr6rb8VCTYjGBa4vZ1AOT-ubFmPp4NlSszLFoT'
 cipher = Fernet(key)
 
 # creates broker address and topic
