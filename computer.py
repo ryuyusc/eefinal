@@ -4,8 +4,9 @@ from datetime import datetime
 import time
 
 #encryption key
-key = b'VgEBRr6rb8VCTYjGBa4vZ1AOT-ubFmPp4NlSszLFoT'
-cipher = Fernet(key)
+key = 'GynZhrE8XGJwDeoSSKu8MAnwawL_NZtU8tXspajt56U='
+
+cipher = Fernet(key.encode('utf-8'))
 
 # creates broker address and topic
 broker = "test.mosquitto.org"

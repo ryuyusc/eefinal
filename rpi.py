@@ -12,10 +12,9 @@ BT_PORT = 3
 TEMP_PORT = 2
 
 # this is for encryption purposes
-key = Fernet.generate_key()
-print(key.decode('utf-8'))
+key = 'GynZhrE8XGJwDeoSSKu8MAnwawL_NZtU8tXspajt56U='
 
-cipher = Fernet(key)
+cipher = Fernet(key.encode('utf-8'))
 
 # creates broker address and topic
 broker = "test.mosquitto.org"
