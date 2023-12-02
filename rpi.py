@@ -20,7 +20,7 @@ cipher = Fernet(key.encode('utf-8'))
 topic = "ryuyb/final"
 
 # API website and key
-API_SITE = "https://openweather.org/current"
+API_SITE = "http://api.openweathermap.org/data/2.5/weather"
 API_KEY = '4cc919c4981eb59f9f4ffd541c6a1626'
 
 
