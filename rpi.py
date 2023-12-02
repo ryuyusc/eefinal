@@ -92,6 +92,8 @@ if __name__ == '__main__':
             # creates tuple to send that has all the data
             data_toSend = (temperature , humidity, api_temp, api_hum)
 
+            print(data_toSend)
+
             #convert data to bytes
             data_bytes = str(data_toSend).encode()
 

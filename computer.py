@@ -24,7 +24,7 @@ def on_message(client, userdata, msg):
     decrypted = cipher.decrypt(msg.payload)
 
     #converts bytes to tuple
-    message = eval(decrypted.decode())
+    message = eval(decrypted.decode('utf-8'))
 
     print(message)
     print(datetime.now())
