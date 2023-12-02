@@ -17,8 +17,7 @@ key = 'GynZhrE8XGJwDeoSSKu8MAnwawL_NZtU8tXspajt56U='
 cipher = Fernet(key.encode('utf-8'))
 
 # creates broker address and topic
-broker = "test.mosquitto.org"
-topic = "final"
+topic = "ryuyb/final"
 
 # API website and key
 API_SITE = "https://openweather.org/current"
@@ -76,7 +75,7 @@ if __name__ == '__main__':
     client = mqtt.Client()
 
     client.on_connect = on_connect
-    client.connect(host=broker, port=1883, keepalive = 60)
+    client.connect(host="test.mosquitto.org", port=1883, keepalive=60)
     client.loop_start()
 
     client.on_publish = on_publish

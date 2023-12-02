@@ -10,7 +10,7 @@ cipher = Fernet(key.encode('utf-8'))
 
 # creates broker address and topic
 broker = "test.mosquitto.org"
-topic = "final"
+topic = "ryuyb/final"
 
 #callback for when connected
 def on_connect(client, userdata, flags, rc):
