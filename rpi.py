@@ -12,7 +12,9 @@ BT_PORT = 3
 TEMP_PORT = 2
 
 # this is for encryption purposes
-key = b'VgEBRr6rb8VCTYjGBa4vZ1AOT-ubFmPp4NlSszLFoT'
+key = Fernet.generate_key()
+print(key.decode('utf-8'))
+
 cipher = Fernet(key)
 
 # creates broker address and topic
