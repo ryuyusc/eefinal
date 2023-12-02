@@ -1,6 +1,6 @@
 import paho.mqtt.client as mqtt
 from cryptography.fernet import Fernet
-from grovepi import grovepi
+import grovepi
 import geocoder
 import requests
 import time
